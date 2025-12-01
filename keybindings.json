@@ -51,32 +51,32 @@
   {
     "command": "workbench.action.splitEditor",
     "key": "s h",
-    "when": "vim.mode == 'Normal' && (editorTextFocus || filesExplorerFocus)"
+    "when": "vim.mode == 'Normal' && (editorTextFocus || filesExplorerFocus) && !inputFocus"
   },
   {
     "command": "workbench.action.splitEditorDown",
     "key": "s v",
-    "when": "vim.mode == 'Normal' && (editorTextFocus || filesExplorerFocus)"
+    "when": "vim.mode == 'Normal' && (editorTextFocus || filesExplorerFocus) && !inputFocus"
   },
   {
     "command": "workbench.action.closeActiveEditor",
     "key": "space b d",
-    "when": "(vim.mode == 'Normal' && editorTextFocus) || filesExplorerFocus"
+    "when": "(vim.mode == 'Normal' && editorTextFocus) || filesExplorerFocus && !inputFocus"
   },
   {
     "command": "workbench.action.closeOtherEditors",
     "key": "space b o",
-    "when": "(vim.mode == 'Normal' && editorTextFocus) || filesExplorerFocus"
+    "when": "(vim.mode == 'Normal' && editorTextFocus) || filesExplorerFocus && !inputFocus"
   },
   {
     "command": "workbench.action.quickOpen",
     "key": "space space",
-    "when": "vim.mode == 'Normal' && (editorTextFocus || filesExplorerFocus)"
+    "when": "vim.mode == 'Normal' && (editorTextFocus || filesExplorerFocus) && !inputFocus"
   },
   {
     "command": "workbench.action.findInFiles",
     "key": "space s g",
-    "when": "vim.mode == 'Normal' && (editorTextFocus || filesExplorerFocus)"
+    "when": "vim.mode == 'Normal' && (editorTextFocus || filesExplorerFocus) && !inputFocus"
   },
   {
     "args": {
